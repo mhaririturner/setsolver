@@ -42,6 +42,7 @@ def solve(arr):
                 for l in range(4):
                     if not ((i[l] == j[l] and j[l] == k[l]) or (i[l] != j[l] and i[l] != k[l] and j[l] != k[l])):
                         bad = True
+                        break
                 if not bad:
                     # print(f"set {count}:\n{i}\n{j}\n{k}\n")
                     set = [i, j, k]
